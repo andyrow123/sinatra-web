@@ -11,5 +11,6 @@ get '/secret' do
 end
 
 get '/cat' do
+  @names = %w[Amigo Oscar Viking].sample
   erb(:index)
 end
